@@ -4,7 +4,7 @@ const Header = (props) => {
     console.log("This is the header")
     return (
         <header className="header">
-            <h1>{props.siteName}</h1>
+            <h1>New albums & singles</h1>
         </header>
     )
 }
