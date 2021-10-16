@@ -1,12 +1,11 @@
-import React from 'react'
+import React from "react";
 
-const Artist = (props) => {
-return (
-<div>
-    <p>{props.artistName}</p>
-</div>
-)
-
-}
-
-export default Artist
+export const Artist = (props) => {
+  return (
+    <div>
+      <a href={props.artistLink} target="_blank">
+        <p>{props.name}</p>
+      </a>
+    </div>
+  );
+};

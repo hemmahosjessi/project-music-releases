@@ -15,8 +15,11 @@ code {
 
 a {
   text-decoration: none;
+  font-family: Helvetica;
+  color: #a0a0a0;
+  font-size: 14px;
+  margin: 0;
 }
-
 
 h1 {
   font-family: Helvetica;
@@ -40,8 +43,19 @@ h3 {
   margin-top: 0;
 }
 
-h2:hover, h3:hover {
+h2:hover,
+h3:hover {
   text-decoration: underline;
+}
+
+.artist-name span:not(:first-of-type, :last-of-type)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-name span:nth-last-of-type(2)::after {
+  content: " & ";
+  color: #a0a0a0;
 }
 
 .header {
@@ -50,7 +64,6 @@ h2:hover, h3:hover {
 
 .grid-container {
   display: grid;
-  /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); */
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
   padding: 0.3rem 2rem 2rem 2rem;
@@ -74,24 +87,26 @@ h2:hover, h3:hover {
   height: 100%;
   width: 100%;
   opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(0,0,0,0.6);;
-  }
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.6);
+}
 
-  .cover-image-container:hover .overlay {
-    opacity: 1;
-  }
+.cover-image-container:hover .overlay {
+  opacity: 1;
+}
 
-.controls { 
-  position: absolute; 
+.controls {
+  position: absolute;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: row; 
+  flex-direction: row;
   top: 50%;
   left: 50%;
   width: 75%;
   transform: translate(-50%, -50%);
+  transition: all 2s ease-in-out;
+  filter: brightness(0) invert(1);
 }
 
 .heart-icon,
@@ -103,4 +118,16 @@ h2:hover, h3:hover {
   width: 64px;
 }
 
+.play-icon:hover {
+  transform: scale(1.2);
+}
 
+.artist-name a:not(:first-of-type, :last-of-type)::before {
+  color: #a0a0a0;
+  content: ", ";
+}
+
+.artist-name a:nth-last-of-type(2)::after {
+  content: " & ";
+  color: #a0a0a0;
+}
