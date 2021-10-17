@@ -13,7 +13,7 @@ export const App = () => {
   return (
     <div>
       <Header />
-      <div className="content"> 
+      {/* <div className="content">  */}
 
       <section className="grid-container">
           {data.albums.items.map((item) => {
@@ -50,7 +50,7 @@ export const App = () => {
           })}
         </aside>
 
-      </div>  
+      {/* </div>   */}
       <Footer />
     </div>
   );
