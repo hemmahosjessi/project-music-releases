@@ -11,5 +11,7 @@ Describe how you approached to problem, and what tools and techniques you used t
 ## View it live
 
 1 Netlifylink to the pair-project.
+https://aleksaandjessi-musicrelease.netlify.app/
 
-2 Netlifylink to my local wiht small adjustments
+2 Netlifylink to my own project with small adjustments
+https://project-music-release-jes.netlify.app/
