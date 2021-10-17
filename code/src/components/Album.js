@@ -17,7 +17,7 @@ const Album = (props) => {
               alt="play button icon"
               src="./icons/play.svg"
             />
-            <img className="dot-icon" alt="menu icon" src="./icons/dots.svg" />
+            <img className="dots-icon" alt="menu icon" src="./icons/dots.svg" />
           </div>
         </div>
       </div>

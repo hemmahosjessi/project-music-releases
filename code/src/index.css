@@ -75,7 +75,7 @@ p {
   display: flex;
   flex-direction: column;
   padding: 1rem 2rem 0 2rem;
-  max-width: 75%;
+  max-width: 74%;
 }
 
 .header-content {
@@ -83,22 +83,21 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: left;
-
 }
 
 .spotify-logo {
   height: 32px;
   margin-right: 1rem;
+  padding-bottom: 3px;
 }
 
-hr { 
+hr {
   display: block;
   color: #a0a0a0;
   border-style: inset;
   opacity: 0.1;
   width: 100%;
-} 
-
+}
 
 /* .content {
   display: flex;
@@ -110,7 +109,7 @@ hr {
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 1.5rem;
   padding: 1rem 2rem 2rem 2rem;
-  width: 75%;
+  width: 74%;
 }
 
 .cover-image-container {
@@ -154,13 +153,13 @@ hr {
 }
 
 .heart-icon,
-.dot-icon {
+.dots-icon {
   width: 32px;
 }
 
 .play-icon {
   width: 64px;
-  transition: .3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .play-icon:hover {
@@ -178,22 +177,27 @@ hr {
 }
 
 .footer {
-  width: 75%;
+  width: 74%;
   padding: 0 2rem 2rem 2rem;
 }
 
-
 .footer-content {
- display: flex;
- flex-direction: row;
- justify-content: left;
- align-items: center;
- margin-top: 2rem;
- /* width: 75%; */
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.team-fox {
+  padding-left: 1rem;
+  padding-bottom: 4px;
 }
 
 .github-logo {
-  width: 40px;
+  width: 32px;
+  height: 32px;
+  margin-right: 0.5rem;
 }
 
 .aleksa,
@@ -204,21 +208,23 @@ hr {
   padding-left: 1rem;
 }
 
-
 /* Playlist styling */
 
 .playlist-container {
-  /* min-width: 320px; */
   width: 20%;
   padding-left: 2rem;
   height: 100%;
   position: fixed;
   top: 0;
   right: 0;
-  background-color: #111;
+  background-color: #1f1d1d;
   overflow-x: hidden;
   padding-top: 20px;
   z-index: 1;
+}
+
+aside {
+  padding-bottom: 3rem;
 }
 
 .playlist-container h4:hover {
@@ -246,4 +252,100 @@ hr {
   justify-content: left;
   align-items: center;
   margin-bottom: 1rem;
+}
+
+/* IPAD */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+  .grid-container {
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    padding: 1rem 2rem 2rem 2rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .overlay {
+    opacity: 1;
+  }
+  
+  .cover-image-container:hover .overlay {
+    opacity: 0;
+  }
+  
+
+  .playlist-container {
+    display: none;
+  }
+
+  .header {
+    padding: 2rem 2rem 0 2rem;
+    max-width: 100%;
+  }
+
+  .footer {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* IPHONE */
+
+@media (max-width: 767px) {
+
+  .grid-container {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .overlay {
+    opacity: 1;
+  }
+  
+  .cover-image-container:hover .overlay {
+    opacity: 0;
+  }
+
+  .playlist-container {
+    display: none;
+  }
+
+  .header {
+    padding: 1rem 1rem 0 1rem;
+    max-width: 100%;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+
+  .spotify-logo {
+    height: 28px;
+    padding-bottom: 3px;
+  }
+
+  .footer {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0 1rem 2rem 1rem;
+  }
+
+  .footer-content {
+    display: grid;
+    grid-template-columns: 2fr;
+  }
+
+  .team-fox {
+    padding-left: 0;
+  }
+
+  .aleksa,
+  .jes {
+    padding-left: 0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
 }
