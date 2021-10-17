@@ -14,20 +14,8 @@ export const App = () => {
     <div>
       <Header />
       <div className="content"> 
-        <aside className="playlist-container">
-          {playlistData.playlists.items.map((playlist) => {
-            return (
-              <Playlist 
-              key={playlist.id}
-              cover={playlist.images[0].url}
-              playlistName={playlist.name}
-              playlistUrl={playlist.external_urls.spotify}
-              trackNumber={playlist.tracks.total} />
-            );
-          })}
-        </aside>
 
-        <section className="grid-container">
+      <section className="grid-container">
           {data.albums.items.map((item) => {
             return (
               <Album
@@ -45,6 +33,23 @@ export const App = () => {
             );
           })}
         </section>
+
+        <aside className="playlist-container">
+          <header className="playlist-header">
+            <h2>Playlists - Editor's picks</h2>
+         </header>
+          {playlistData.playlists.items.map((playlist) => {
+            return (
+              <Playlist 
+              key={playlist.id}
+              cover={playlist.images[0].url}
+              playlistName={playlist.name}
+              playlistUrl={playlist.external_urls.spotify}
+              trackNumber={playlist.tracks.total} />
+            );
+          })}
+        </aside>
+
       </div>  
       <Footer />
     </div>

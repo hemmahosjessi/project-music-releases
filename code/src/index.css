@@ -74,19 +74,16 @@ p {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: left;
   align-items: center;
   padding: 1rem 2rem 0 2rem;
 }
 
 .spotify-logo {
   height: 32px;
+  margin-right: 1rem;
 }
-/* 
-.header-line {
-  margin: 0 auto;
-  border-top: 1px solid #252525;
-} */
+
 
 .content {
   display: flex;
@@ -190,12 +187,16 @@ p {
 
 .playlist-container {
   min-width: 320px;
-  padding-left: 2rem;
-  padding-top: 2rem;
+  padding-left: 1rem;
+  /* padding-top: 2rem; */
 }
 
 .playlist-container h4:hover {
   text-decoration: underline;
+}
+
+.playlist-header {
+  margin-bottom: 1.5rem;
 }
 
 .thumbnail {
