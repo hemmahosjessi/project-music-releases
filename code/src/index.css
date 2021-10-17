@@ -215,16 +215,13 @@ hr {
   padding-left: 2rem;
   height: 100%;
   position: fixed;
+  /* float: right; */
   top: 0;
   right: 0;
   background-color: #1f1d1d;
   overflow-x: hidden;
   padding-top: 20px;
   z-index: 1;
-}
-
-aside {
-  padding-bottom: 3rem;
 }
 
 .playlist-container h4:hover {
