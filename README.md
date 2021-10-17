@@ -1,5 +1,6 @@
 # Music Releases
-Replace this readme with your own information about your project.
+This is my local project that I have been exploring. The pair project is in Aleksas Github here:
+https://github.com/A1eksa/project-music-releases
 
 Start by briefly describing the assignment in a sentence or two. Keep it short and to the point.
 
@@ -9,4 +10,6 @@ Describe how you approached to problem, and what tools and techniques you used t
 
 ## View it live
 
-Every project should be deployed somewhere. Be sure to include the link to the deployed project so that the viewer can click around and see what it's all about.
+1 Netlifylink to the pair-project.
+
+2 Netlifylink to my local wiht small adjustments
