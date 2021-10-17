@@ -4,7 +4,7 @@ const Header = (props) => {
   console.log("This is the header");
   return (
     <header className="header">
-      <div class="header-content">
+      <div className="header-content">
       <img
         src="/icons/Spotify_Logo_RGB_Green.png"
         alt="spotify logo"
